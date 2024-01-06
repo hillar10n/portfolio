@@ -1,0 +1,51 @@
+.projects {
+	@include flex(space-around, center, row);
+	width: 90%;
+	margin: auto;
+	min-height: 90vh;
+	text-align: center;
+	flex-wrap: wrap;
+	h3 {
+		margin: 3rem;
+		text-transform: capitalize;
+	}
+	.project {
+		flex: 1 1 40rem;
+		margin: 3rem;
+		border-radius: 2rem;
+		.project-card {
+			position: relative;
+			transition: transform 1s;
+			border-radius: 2rem;
+			overflow: hidden;
+			cursor: pointer;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		.cover {
+			background-color: rgba(0, 0, 0, 0.5);
+			position: absolute;
+			bottom: 0;
+			right: -50%;
+			height: 100%;
+			width: 100%;
+			&:hover {
+				transform: translateX(100%);
+			}
+		}
+	}
+	.project img {
+		width: 100%;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	}
+}
+
+@keyframes coverslide {
+	from {
+		transform: translate(-100);
+	}
+	to {
+		transform: translate(100);
+	}
+}
