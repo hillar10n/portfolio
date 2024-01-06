@@ -49,10 +49,14 @@ $grey-text: #2c2c2c;
 		width: 100%;
 	}
 	nav {
+		@include flex(center, center, row);
 		.logo {
 			@include flex(center, center, column);
 			flex: 1 1 20rem;
-			margin-top: 3rem;
+			margin: 2rem;
+			h1 {
+				display: none;
+			}
 		}
 		ul {
 			flex: 1 1 60rem;

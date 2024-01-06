@@ -303,7 +303,12 @@ footer ul {
 @media screen and (max-width: 480px) {
   footer h4 {
     text-align: center;
-    background-color: red;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 1332px) {
@@ -333,13 +338,22 @@ footer ul {
   .main-head {
     width: 100%;
   }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
   nav .logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex: 1 1 20rem;
-    margin-top: 3rem;
+    margin: 2rem;
+  }
+  nav .logo h1 {
+    display: none;
   }
   nav ul {
     flex: 1 1 60rem;
