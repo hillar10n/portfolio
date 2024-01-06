@@ -4,11 +4,20 @@ footer {
 	color: white;
 	padding: 0% 5%;
 	@include flex(space-between, center, row);
+	flex-wrap: wrap;
 	h4,
 	ul {
 		flex: 1 1 30rem;
 	}
 	ul {
 		@include flex(space-around, center, row);
+	}
+}
+
+@media screen and (max-width: 480px) {
+	footer {
+		h4 {
+			text-align: center;
+		}
 	}
 }
