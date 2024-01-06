@@ -209,21 +209,18 @@ nav ul {
 }
 .projects .project .project-card {
   position: relative;
-  transition: transform 1s;
   border-radius: 2rem;
   overflow: hidden;
   cursor: pointer;
-}
-.projects .project .project-card:hover {
-  transform: scale(1.05);
 }
 .projects .project .cover {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0;
-  right: -50%;
+  left: 0%;
   height: 100%;
   width: 100%;
+  transition: transform 1s ease-in;
 }
 .projects .project .cover:hover {
   transform: translateX(100%);
