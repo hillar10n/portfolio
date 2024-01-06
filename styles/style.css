@@ -306,6 +306,7 @@ footer ul {
 @media screen and (max-width: 480px) {
   footer h4 {
     text-align: center;
+    background-color: red;
   }
 }
 @media screen and (max-width: 1332px) {
