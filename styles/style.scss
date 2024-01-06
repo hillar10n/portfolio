@@ -35,6 +35,16 @@ $grey-text: #2c2c2c;
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.projects {
+		.project {
+			.cover {
+				display: none;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 770px) {
 	html {
 		font-size: 45%;
